@@ -10,7 +10,7 @@ def rotate_images(directory):
 
     # Process each file in the directory
     for filename in os.listdir(directory):
-        if filename.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'gif')):
+        if filename.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'gif', 'webp')):
             file_path = os.path.join(directory, filename)
             try:
                 with Image.open(file_path) as img:
